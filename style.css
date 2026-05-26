@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Verdana, Helvetica, sans-serif;
+  background-image: url("images/ninasan.jpg");
+  background-size: 1000px 1000px;
+  background-position: center;
+  height: 100vh;
+  padding: 5px;
+}
+
+.bigsubtitle {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(10, 0, 194);
+}
+
+.guestbook {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  border-radius: 20px;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid;
+  margin: -55px auto;
+  top: -45px;
+}
+
+.subtitle { 
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(10, 0, 194);
+  position: relative;
+  top: -30px;
+}
+
+.subtitlebox {
+  background-color: #1686ff5d;
+  padding: -5px;
+  border-radius: 30px;
+  max-width: 950px;
+  max-height: 10000px;
+  margin: 5px auto;
+  flex: 1;
+  order: 2;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid;
+}
+
+.subtitleimg {
+  float:right;
+  width: 95%;
+  margin-top: 1.5px;
+  padding: 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid;
+}
+
+.subtitleimgposition {
+ position: relative;
+  width: 50%;
+  float: right;
+  right: 0px;
+  padding-top: 45px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nav {
+  background-color:#4fa4ff8e;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 20px;
+  position: fixed;
+  top: 12%;
+  width: 20%;
+  height: 50vh;
+  left: 35px;
+  font-size: 30px;
+}
+
+.navbutton {
+  color: #372e29;
+  display: flex;
+  position: relative;
+  top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbutton a:hover {
+  color: #e8e5db;
+  background-color: #001c6f;
+}
+
+
+#banner {
+  position: relative;
+  left: -5px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 70px 70px 10px 10px;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid;
+}
+
+.title {
+  position: absolute;
+  inset: 0;              
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(10, 0, 194);
+  font-size: 70px;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.sidegif {
+  width: 25%;
+  position: fixed;
+  top: 52%;
+  right: 0px;
+}
+
+.sidetext {
+  font-size: 30px;
+  width: 90%;
+  position: absolute;
+  top: 445px;
+  left: 2px;
+  margin: 30px;
+  text-align: center;
+  color: rgb(10, 0, 194);
+}
+
+.gbook {
+  margin-top: 400px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(10, 0, 194);
+}
+
+.changelog {
+  width: 20%;
+  height: 380px;
+  position: fixed;
+  top: 12%;
+  right: 2%;
+  border-radius: 20px;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid;
+}
+
+.changetitle {
+  font-size: 40px;
+  color: rgb(10, 0, 194);
+  position: fixed;
+  top: 1%;
+  right: 5%;
+}

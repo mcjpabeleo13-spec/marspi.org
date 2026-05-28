@@ -374,31 +374,6 @@ align-items: center;
   .nav {
     width: 22%;
     height: auto;
-    min-height: 300px;
-  }
-
-  .navbutton {
-    font-size: 2rem;
-  }
-
-  .title {
-    font-size: 3.5rem;
-  }
-
-  .bigsubtitle {
-    font-size: 2.5rem;
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-  }
-
-  .guestbook {
-    width: 70%;
-  }
-
-  .subtitlebox {
-    max-width: 90%;
   }
 
   .changelog {
@@ -409,14 +384,26 @@ align-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .albumimg {
-    width: 60%;
+  .guestbook {
+    width: 70%;
   }
 
-  .musicsmalltext {
-    width: 50%;
-    left: auto;
-    position: relative;
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .bigsubtitle {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+
+  .rightsidegif,
+  .leftsidegif {
+    display: none;
   }
 }
 
@@ -428,10 +415,6 @@ align-items: center;
     height: auto;
     left: 0;
     margin: 10px auto;
-  }
-
-  .navbutton {
-    font-size: 1.5rem;
   }
 
   .subtitleimgposition {
@@ -457,36 +440,29 @@ align-items: center;
     display: none;
   }
 
-  .rightsidegif,
-  .leftsidegif {
-    display: none;
-  }
-
   .title {
     font-size: 2.5rem;
   }
 
   .bigsubtitle {
-    font-size: 2rem;
+    font-size: 24px;
   }
 
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 
-  .musicbigtext {
-    left: 0;
-    text-align: center;
+  .sidetext {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 10px;
   }
 
-  .musicsmalltext {
-    position: static;
-    width: 100%;
-  }
-
-  .albumimg {
-    width: 90%;
-    top: 0;
-    left: 0;
+  #nowPlayingBox,
+  #randomBtn,
+  #toggleBtn {
+    position: relative;
+    right: auto;
   }
 }

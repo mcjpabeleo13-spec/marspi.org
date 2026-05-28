@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>marspi.org (music)</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/websiteicon.ico">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    
+   <div id="banner">
+    <img src="images/ninasensei.png" class="banner-img">
+    <h1 class="title">marspi.org</h1>
+</div>
+
+<button id="randomBtn" onclick="playRandomSong()">Play a random Song</button>
+<button id="toggleBtn" onclick="toggleMusic()">Pause</button>
+
+<div id="nowPlayingBox">
+    <div id="nowPlayingText"></div>
+</div>
+
+<audio id="audioPlayer"></audio>
+
+<div class="musicbox">
+    <p class="musictext">
+        This is the music page where I showcase my perferred kinds of music and jam out! Feel free to listen to my complied playlists
+    </p>
+    <br>
+    <p class="musicbigtext">
+        <b>MARSPI JAM</b>
+    </p>
+    <img src="images/musicimage.png" class="albumimg"> 
+    <iframe width="45%" height="290" style="position:relative; left: 55px; bottom:225px; border-radius: 30px;  border-color: rgb(0, 98, 255); border-width: 5px;border-style: solid" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2243447303&color=%231045d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <p class="musicsmalltext" >
+        Playlist description - this are songs I regularly listen too and hey generally calm me down or vibe too.
+    </p>
+    </div>
+    <img src="images/musicleftgif.gif" class="leftsidegif">
+<p class="navtitle"><b>OPTIONS</b></p>
+
+<div class="nav">
+<div class="navbutton"><img src="images/homeicon.png" class=navicon ><a href="index.html">home</a></div>
+<div class="navbutton"><img src="images/abouticon.png" class=navicon ><a href="about.html">about</a></div>
+<div class="navbutton"><img src="images/blogicon.png" class=navicon ><a href="blog.html">blog</a></div>
+<div class="navbutton"><img src="images/articon.png" class=navicon ><a href="art.html">art</a></div>
+<div class="navbutton"><img src="images/musicicon.png" class=navicon ><a href="music.html">music</a></div>
+
+</body>
+
+<style>
+body {
+background-image: url("images/musicbg.jpg");
+}
+.musicbox {
+background-color: #1686ff5d;
+align-items: center;
+  padding: -5px;
+  border-radius: 30px;
+  max-width: 950px;
+  max-height: 950px;
+  margin: 5px auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid
+}
+
+.musictext{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(10, 0, 194);
+    position: relative;
+    top: 5px;
+}
+
+.musicbigtext{
+    font-size: 40px;
+    color: rgb(10, 0, 194);
+    position: relative;
+    left:100px;
+    top: -50px;
+}
+
+
+.albumimg {
+    width: 45%;
+    border-radius: 30px;
+    border-color: rgb(0, 98, 255);
+    border-width: 5px;
+    border-style: solid;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+.musicsmalltext{
+    width: 40%;
+    font-size: 25px;
+    color: rgb(10, 0, 194);
+    text-align: center;
+    position: relative;
+    left: 525px;
+    bottom: 230px;
+}
+
+#nowPlayingBox {
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    background: rgba(0, 0, 255, 0.3);
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: 3px solid blue;
+    display: none;
+    overflow: hidden;
+    width: 380px;
+}
+
+#nowPlayingText {
+    white-space: nowrap;
+    font-size: 30px;
+    color: blue;
+    animation: scrollText 6s linear infinite;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+#randomBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: blue;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+}
+
+#toggleBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: blue;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 310px;
+  
+    
+}
+
+</style>
+
+<script>
+    const songs = [
+    { artist: "Takeshi Abo", title: "Lease", file: "music/lease.mp3" },
+    { artist: "Persona Q OST", title: "Were Here Now", file: "music/were_here_now.mp3" },
+    { artist: "Persona Q OST", title: "Corndog", file: "music/corndog.mp3" },
+    { artist: "Persona Q OST", title: "Strange School", file: "music/strange_school.mp3" },
+    { artist: "Persona Q OST", title: "Light the Fire - Kagejikan", file: "music/kagejikan.mp3" },
+    { artist: "Persona Q OST", title: "Light the Fire - Mayonaka", file: "music/mayonaka.mp3" },
+    { artist: "Funkin Sound Team", title: "Stay Funky", file: "music/stay_funky.mp3" },
+    { artist: "Toby Fox", title: "Spider Dance", file: "music/spider_dance.mp3" },
+    { artist: "Toby Fox", title: "Rude Buster", file: "music/rude_buster.mp3" },
+    { artist: "Toby Fox", title: "TV World", file: "music/tv_world.mp3" },
+    { artist: "Pokemon OST", title: "Littleroot Town", file: "music/littleroot.mp3" },
+    { artist: "Pokemon OST", title: "Rustboro City", file: "music/rustboro.mp3" },
+    { artist: "Gorillaz", title: "Tomorrow Comes Today", file: "music/tomorrow.mp3" },
+    { artist: "Gorillaz", title: "Melancholy Hill", file: "music/melancholy_hill.mp3" }
+];
+
+function playRandomSong() {
+    const random = songs[Math.floor(Math.random() * songs.length)];
+    
+    const audio = document.getElementById("audioPlayer");
+    audio.src = random.file;
+    audio.loop = true;
+    audio.play();
+
+    const box = document.getElementById("nowPlayingBox");
+    const text = document.getElementById("nowPlayingText");
+
+    text.textContent = `Now Playing: ${random.artist} — ${random.title}`;
+    box.style.display = "block";
+
+    text.style.animation = "none";
+    void text.offsetWidth;
+    text.style.animation = "scrollText 6s linear infinite";
+}
+
+function toggleMusic() {
+    const audio = document.getElementById("audioPlayer");
+    const btn = document.getElementById("toggleBtn");
+
+    if (audio.paused) {
+        audio.play();
+        btn.textContent = "Pause";
+    } else {
+        audio.pause();
+        btn.textContent = "Play";
+    }
+}
+
+</script>

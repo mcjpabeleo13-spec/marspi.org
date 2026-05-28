@@ -240,3 +240,253 @@ body {
 .item img:hover {
   transform: scale(1.08);
 }
+
+    .posts {
+  flex: 3;
+}
+
+.post {
+  background: rgba(53, 137, 255, 0.385);
+  padding: 10px,20px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+.date {
+  font-size: 20px;
+  color: rgb(10, 0, 194);
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(10, 0, 194);
+}
+
+.musicbox {
+background-color: #1686ff5d;
+align-items: center;
+  padding: -5px;
+  border-radius: 30px;
+  max-width: 950px;
+  max-height: 950px;
+  margin: 5px auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-color: rgb(0, 98, 255);
+  border-width: 5px;
+  border-style: solid
+}
+
+.musictext{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(10, 0, 194);
+    position: relative;
+    top: 5px;
+}
+
+.musicbigtext{
+    font-size: 40px;
+    color: rgb(10, 0, 194);
+    position: relative;
+    left:100px;
+    top: -50px;
+}
+
+
+.albumimg {
+    width: 45%;
+    border-radius: 30px;
+    border-color: rgb(0, 98, 255);
+    border-width: 5px;
+    border-style: solid;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+.musicsmalltext{
+    width: 40%;
+    font-size: 25px;
+    color: rgb(10, 0, 194);
+    text-align: center;
+    position: relative;
+    left: 525px;
+    bottom: 230px;
+}
+
+#nowPlayingBox {
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    background: rgba(0, 0, 255, 0.3);
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: 3px solid blue;
+    display: none;
+    overflow: hidden;
+    width: 380px;
+}
+
+#nowPlayingText {
+    white-space: nowrap;
+    font-size: 30px;
+    color: blue;
+    animation: scrollText 6s linear infinite;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+#randomBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: blue;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+}
+
+#toggleBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: blue;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 310px;
+}
+
+@media (max-width: 1024px) {
+
+  .nav {
+    width: 22%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .navbutton {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .bigsubtitle {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .guestbook {
+    width: 70%;
+  }
+
+  .subtitlebox {
+    max-width: 90%;
+  }
+
+  .changelog {
+    width: 25%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .albumimg {
+    width: 60%;
+  }
+
+  .musicsmalltext {
+    width: 50%;
+    left: auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 0;
+    margin: 10px auto;
+  }
+
+  .navbutton {
+    font-size: 1.5rem;
+  }
+
+  .subtitleimgposition {
+    width: 100%;
+    float: none;
+    padding-top: 10px;
+  }
+
+  .subtitleimg {
+    width: 100%;
+  }
+
+  .guestbook {
+    width: 90%;
+    height: 300px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .changelog {
+    display: none;
+  }
+
+  .rightsidegif,
+  .leftsidegif {
+    display: none;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .bigsubtitle {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .musicbigtext {
+    left: 0;
+    text-align: center;
+  }
+
+  .musicsmalltext {
+    position: static;
+    width: 100%;
+  }
+
+  .albumimg {
+    width: 90%;
+    top: 0;
+    left: 0;
+  }
+}

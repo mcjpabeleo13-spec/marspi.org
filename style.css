@@ -228,7 +228,7 @@ body {
 
 .item img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 2 / 2;
   object-fit: cover;
 
   border-radius: 8px;
@@ -268,11 +268,10 @@ align-items: center;
   padding: -5px;
   border-radius: 30px;
   max-width: 950px;
-  max-height: 950px;
+  max-height: 1235px;
   margin: 5px auto;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 25px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 30px;
@@ -294,10 +293,17 @@ align-items: center;
     font-size: 40px;
     color: rgb(10, 0, 194);
     position: relative;
-    left:100px;
-    top: -50px;
+    left:12vh;
+    top: -5vh;
 }
 
+.musicbigtext2{
+    font-size: 40px;
+    color: rgb(10, 0, 194);
+    position: relative;
+    left:3vh;
+    top: -25vh;
+}
 
 .albumimg {
     width: 45%;
@@ -306,8 +312,19 @@ align-items: center;
     border-width: 5px;
     border-style: solid;
     position: relative;
-    top: -90px;
-    left: 20px;
+    top: -9vh;
+    left: 3vh;
+}
+
+.albumimg2 {
+  width: 45%;
+    border-radius: 30px;
+    border-color: rgb(0, 98, 255);
+    border-width: 5px;
+    border-style: solid;
+    position: relative;
+    top: -83vh;
+    left: 3vh;
 }
 
 .musicsmalltext{
@@ -316,9 +333,20 @@ align-items: center;
     color: rgb(10, 0, 194);
     text-align: center;
     position: relative;
-    left: 525px;
-    bottom: 230px;
+    left: 57vh;
+    bottom: 25vh;
 }
+
+.musicsmalltext2{
+    width: 45%;
+    font-size: 25px;
+    color: rgb(10, 0, 194);
+    text-align: center;
+    position: relative;
+    left: 55vh;
+    bottom: 33vh;
+}
+
 
 #nowPlayingBox {
     position: fixed;
@@ -369,100 +397,21 @@ align-items: center;
     right: 310px;
 }
 
-@media (max-width: 1024px) {
-
-  .nav {
-    width: 22%;
-    height: auto;
-  }
-
-  .changelog {
-    width: 25%;
-  }
-
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .guestbook {
-    width: 70%;
-  }
-
-  .title {
-    font-size: 3.5rem;
-  }
-
-  .bigsubtitle {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 24px;
-  }
-
-
-  .rightsidegif,
-  .leftsidegif {
-    display: none;
-  }
+.bioflex {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-@media (max-width: 768px) {
+.biotext {
+  flex: 1;
+}
 
-  .nav {
-    position: relative;
-    width: 90%;
-    height: auto;
-    left: 0;
-    margin: 10px auto;
-  }
-
-  .subtitleimgposition {
-    width: 100%;
-    float: none;
-    padding-top: 10px;
-  }
-
-  .subtitleimg {
-    width: 100%;
-  }
-
-  .guestbook {
-    width: 90%;
-    height: 300px;
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .changelog {
-    display: none;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .bigsubtitle {
-    font-size: 24px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-  }
-
-  .sidetext {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin: 10px;
-  }
-
-  #nowPlayingBox,
-  #randomBtn,
-  #toggleBtn {
-    position: relative;
-    right: auto;
-  }
+.bioimg {
+  width: 50%;
+  border-radius: 30px;
+  border: 5px solid rgb(0, 98, 255);
+  position: relative;
+  top: 7vh;
+  left: 1vh;
 }

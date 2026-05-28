@@ -6,6 +6,13 @@
     <link rel="icon" type="image/x-icon" href="images/websiteicon.ico">
     <link rel="stylesheet" href="style.css">
     </head>
+<style>
+    
+body {
+background-image: url("images/musicbg.jpg");
+}
+
+</style>
 
 <body>
     
@@ -25,19 +32,29 @@
 
 <div class="musicbox">
     <p class="musictext">
-        This is the music page where I showcase my perferred kinds of music and jam out! Feel free to listen to my complied playlists
+        This is the music page where I showcase my perferred kinds of music and jam out! Feel free to listen to my complied playlists.
     </p>
     <br>
     <p class="musicbigtext">
         <b>MARSPI JAM</b>
     </p>
     <img src="images/musicimage.png" class="albumimg"> 
-    <iframe width="45%" height="290" style="position:relative; left: 55px; bottom:225px; border-radius: 30px;  border-color: rgb(0, 98, 255); border-width: 5px;border-style: solid" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2243447303&color=%231045d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <iframe width="45%" height="290" style="position:relative; left: 7vh; bottom:225px; border-radius: 30px;  border-color: rgb(0, 98, 255); border-width: 5px;border-style: solid" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2243447303&color=%231045d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     <p class="musicsmalltext" >
         Playlist description - this are songs I regularly listen too and hey generally calm me down or vibe too.
     </p>
-    </div>
-    <img src="images/musicleftgif.gif" class="leftsidegif">
+    <p class="musicbigtext2">
+        <b>GUILTY PLEASURES</b>
+    </p>
+    <iframe width="45%" height="290" style="position:relative; left: 54vh; bottom:280px; border-radius: 30px;  border-color: rgb(0, 98, 255); border-width: 5px;border-style: solid" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2244015038&color=%23512590&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/marspi" title="marspi" target="_blank" style="color: #cccccc; text-decoration: none;">marspi</a> · <a href="https://soundcloud.com/marspi/sets/guilty-pleasures" title="Guilty Pleasures" target="_blank" style="color: #cccccc; text-decoration: none;">Guilty Pleasures</a></div>
+    <p class="musicsmalltext2" >
+        Playlist description - these songs are cheesey cringe pop songs I listen to as a guilty pleasure, I am a sucker for a good love song even if its cringe.
+    </p>
+    <img src="images/musicimage2.png" class="albumimg2">
+</div>
+
+<img src="images/musicleftgif.gif" class="leftsidegif">
+
 <p class="navtitle"><b>OPTIONS</b></p>
 
 <div class="nav">
@@ -48,121 +65,6 @@
 <div class="navbutton"><img src="images/musicicon.png" class=navicon ><a href="music.html">music</a></div>
 
 </body>
-
-<style>
-body {
-background-image: url("images/musicbg.jpg");
-}
-.musicbox {
-background-color: #1686ff5d;
-align-items: center;
-  padding: -5px;
-  border-radius: 30px;
-  max-width: 950px;
-  max-height: 950px;
-  margin: 5px auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-color: rgb(0, 98, 255);
-  border-width: 5px;
-  border-style: solid
-}
-
-.musictext{
-    font-size: 30px;
-    text-align: center;
-    color: rgb(10, 0, 194);
-    position: relative;
-    top: 5px;
-}
-
-.musicbigtext{
-    font-size: 40px;
-    color: rgb(10, 0, 194);
-    position: relative;
-    left:100px;
-    top: -50px;
-}
-
-
-.albumimg {
-    width: 45%;
-    border-radius: 30px;
-    border-color: rgb(0, 98, 255);
-    border-width: 5px;
-    border-style: solid;
-    position: relative;
-    top: -90px;
-    left: 20px;
-}
-
-.musicsmalltext{
-    width: 40%;
-    font-size: 25px;
-    color: rgb(10, 0, 194);
-    text-align: center;
-    position: relative;
-    left: 525px;
-    bottom: 230px;
-}
-
-#nowPlayingBox {
-    position: fixed;
-    top: 55px;
-    right: 20px;
-    background: rgba(0, 0, 255, 0.3);
-    padding: 10px 10px;
-    border-radius: 15px;
-    border: 3px solid blue;
-    display: none;
-    overflow: hidden;
-    width: 380px;
-}
-
-#nowPlayingText {
-    white-space: nowrap;
-    font-size: 30px;
-    color: blue;
-    animation: scrollText 6s linear infinite;
-}
-
-@keyframes scrollText {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
-#randomBtn {
-    padding: 10px 20px;
-    border-radius: 20px;
-    background: blue;
-    color: white;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-}
-
-#toggleBtn {
-    padding: 10px 20px;
-    border-radius: 20px;
-    background: blue;
-    color: white;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    right: 310px;
-  
-    
-}
-
-</style>
 
 <script>
     const songs = [
@@ -179,8 +81,22 @@ align-items: center;
     { artist: "Pokemon OST", title: "Littleroot Town", file: "music/littleroot.mp3" },
     { artist: "Pokemon OST", title: "Rustboro City", file: "music/rustboro.mp3" },
     { artist: "Gorillaz", title: "Tomorrow Comes Today", file: "music/tomorrow.mp3" },
-    { artist: "Gorillaz", title: "Melancholy Hill", file: "music/melancholy_hill.mp3" }
-];
+    { artist: "Gorillaz", title: "Melancholy Hill", file: "music/melancholy_hill.mp3" },
+    { artist: "NSYNC", title:"byebyebye", file: "music/byebye.mp3"},
+    { artist: "One Direction", title: "Live while were young", file: "music/live.mp3"},
+    { artist: "One Direction", title: "What makes you beautiful", file: "music/beautiful.mp3"},
+    { artist: "One Direction", title: "Best Song Ever", file: "music/bestsongever.mp3"},
+    { artist: "NSYNC", title: "Better Place", file: "music/betterplace.mp3"},
+    { artist: "Bruno Mars", title: "Will it Rain", file: "music/rain.mp3"},
+    { artist: "Bruno Mars", title: "Talking to the moon", file: "music/moon.mp3"},
+    { artist: "Bruno Mars", title: "When I was your man", file: "music/man.mp3"},
+    { artist: "Bruno Mars", title: "Locked out of Heaven", file: "music/locked.mp3"},
+    { artist: "K'naan", title: "Bang Bang Bang", file: "music/bangbang.mp3"},
+    { artist: "Maroon 5", title: "Sugar", file: "music/sugar.mp3"},
+    { artist: "Maroon 5", title: "Maps", file: "music/map.mp3"},
+    { artist: "Maroon 5", title: "This Love", file: "music/thislove.mp3"},
+    { artist: "Katy Perry", title: "One that got away", file: "music/gotaway.mp3"}
+]
 
 function playRandomSong() {
     const random = songs[Math.floor(Math.random() * songs.length)];

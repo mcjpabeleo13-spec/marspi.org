@@ -157,9 +157,23 @@ body {
   width: 45%;
   position: fixed;
   top: 15%;
-  right: -21vh;
+  right: -24vh;
 }
 
+.rightsideimage3{
+  width: 45%;
+  position: fixed;
+  top: 15%;
+  right: -26vh;
+}
+
+
+.rightsideimage2 {
+  width: 45%;
+  position: fixed;
+  top: 15%;
+  right: -20vh;
+}
 
 .leftsidegif {
   width: 15%;
@@ -331,7 +345,7 @@ align-items: center;
     border-width: 5px;
     border-style: solid;
     position: relative;
-    top: -83vh;
+    top: -84vh;
     left: 3vh;
 }
 

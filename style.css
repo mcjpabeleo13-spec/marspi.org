@@ -94,7 +94,7 @@ body {
   top: 12%;
   max-width: 12%;
   max-height: 50%;
-  left: 7%;
+  float: left;
 }
 
 .navbutton {
